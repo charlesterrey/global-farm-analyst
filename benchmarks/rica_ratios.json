@@ -1,0 +1,153 @@
+{
+  "_meta": {
+    "description": "Referentiels RICA (Reseau d'Information Comptable Agricole) par OTEX",
+    "source": "Agreste — Ministere de l'Agriculture (donnees publiques)",
+    "avertissement": "Ces valeurs sont des moyennes indicatives par OTEX. Elles varient significativement selon la region, la taille de l'exploitation et les conditions annuelles. A utiliser comme ordres de grandeur pour le benchmarking, pas comme normes absolues.",
+    "annee_reference": "2022-2023",
+    "unite_montants": "EUR",
+    "methode": "Medianes et moyennes issues des publications Agreste/RICA"
+  },
+  "otex": {
+    "15_grandes_cultures": {
+      "code_otex": "15",
+      "libelle": "Cereales et oleoproteagineux (grandes cultures)",
+      "structure_moyenne": {
+        "sau_ha": 130,
+        "uta": 1.5,
+        "ca_moyen": 200000,
+        "total_bilan_moyen": 550000
+      },
+      "ratios": {
+        "solvabilite": {
+          "autonomie_financiere": {"mediane": 0.38, "q1": 0.28, "q3": 0.52, "seuil_alerte": 0.20},
+          "endettement_global": {"mediane": 1.60, "q1": 0.90, "q3": 2.60, "seuil_alerte": 3.00},
+          "dettes_fin_ebe": {"mediane": 5.5, "q1": 2.5, "q3": 9.0, "seuil_alerte": 7.0},
+          "couverture_annuites": {"mediane": 1.40, "q1": 1.05, "q3": 2.00, "seuil_alerte": 1.00}
+        },
+        "liquidite": {
+          "liquidite_generale": {"mediane": 1.80, "q1": 1.20, "q3": 2.80, "seuil_alerte": 1.00},
+          "liquidite_reduite": {"mediane": 0.90, "q1": 0.50, "q3": 1.50, "seuil_alerte": 0.50},
+          "bfr_jours_ca": {"mediane": 75, "q1": 40, "q3": 120, "seuil_alerte": 150}
+        },
+        "rentabilite": {
+          "roe": {"mediane": 0.06, "q1": 0.01, "q3": 0.12, "seuil_alerte": 0.00},
+          "roa": {"mediane": 0.04, "q1": 0.01, "q3": 0.08, "seuil_alerte": 0.00},
+          "marge_ebe": {"mediane": 0.28, "q1": 0.18, "q3": 0.38, "seuil_alerte": 0.10},
+          "marge_nette": {"mediane": 0.08, "q1": 0.02, "q3": 0.15, "seuil_alerte": 0.00},
+          "va_par_uta": {"mediane": 65000, "q1": 45000, "q3": 90000, "seuil_alerte": 35000},
+          "ebe_par_uta": {"mediane": 42000, "q1": 25000, "q3": 65000, "seuil_alerte": 20000},
+          "ebe_par_ha": {"mediane": 350, "q1": 200, "q3": 550, "seuil_alerte": 100}
+        },
+        "structure_charges": {
+          "charges_ope_ca": {"mediane": 0.38, "q1": 0.30, "q3": 0.48, "seuil_alerte": 0.55},
+          "charges_structure_ca": {"mediane": 0.30, "q1": 0.22, "q3": 0.38, "seuil_alerte": 0.45},
+          "charges_personnel_va": {"mediane": 0.15, "q1": 0.05, "q3": 0.28, "seuil_alerte": 0.40},
+          "cout_moyen_dette": {"mediane": 0.025, "q1": 0.015, "q3": 0.040, "seuil_alerte": 0.060},
+          "poids_amortissements_ebe": {"mediane": 0.45, "q1": 0.30, "q3": 0.65, "seuil_alerte": 0.80}
+        },
+        "specifiques_agricoles": {
+          "taux_subventionnement": {"mediane": 0.25, "q1": 0.15, "q3": 0.38, "seuil_dependance": 0.50},
+          "charges_ope_ha": {"mediane": 550, "q1": 400, "q3": 750, "seuil_alerte": 900},
+          "charges_structure_ha": {"mediane": 450, "q1": 300, "q3": 600, "seuil_alerte": 750},
+          "annuites_ebe": {"mediane": 0.35, "q1": 0.20, "q3": 0.50, "seuil_alerte": 0.60},
+          "cout_mecanisation_ha": {"mediane": 420, "q1": 300, "q3": 580, "seuil_alerte": 700}
+        }
+      }
+    },
+    "45_polyculture_elevage": {
+      "code_otex": "45",
+      "libelle": "Polyculture-elevage",
+      "structure_moyenne": {
+        "sau_ha": 110,
+        "uta": 1.8,
+        "ca_moyen": 180000,
+        "total_bilan_moyen": 480000
+      },
+      "ratios": {
+        "solvabilite": {
+          "autonomie_financiere": {"mediane": 0.35, "q1": 0.22, "q3": 0.48},
+          "endettement_global": {"mediane": 1.85, "q1": 1.10, "q3": 3.50},
+          "dettes_fin_ebe": {"mediane": 6.0, "q1": 3.0, "q3": 10.0},
+          "couverture_annuites": {"mediane": 1.30, "q1": 0.95, "q3": 1.80}
+        },
+        "rentabilite": {
+          "marge_ebe": {"mediane": 0.25, "q1": 0.15, "q3": 0.35},
+          "ebe_par_uta": {"mediane": 35000, "q1": 20000, "q3": 55000},
+          "ebe_par_ha": {"mediane": 300, "q1": 150, "q3": 500}
+        },
+        "specifiques_agricoles": {
+          "taux_subventionnement": {"mediane": 0.30, "q1": 0.18, "q3": 0.45}
+        }
+      }
+    },
+    "46_elevage_bovin_lait": {
+      "code_otex": "46",
+      "libelle": "Bovins lait",
+      "structure_moyenne": {
+        "sau_ha": 95,
+        "uta": 2.0,
+        "ca_moyen": 220000,
+        "total_bilan_moyen": 520000
+      },
+      "ratios": {
+        "solvabilite": {
+          "autonomie_financiere": {"mediane": 0.32, "q1": 0.20, "q3": 0.45},
+          "dettes_fin_ebe": {"mediane": 6.5, "q1": 3.5, "q3": 11.0}
+        },
+        "rentabilite": {
+          "marge_ebe": {"mediane": 0.22, "q1": 0.12, "q3": 0.32},
+          "ebe_par_uta": {"mediane": 32000, "q1": 18000, "q3": 50000}
+        },
+        "specifiques_agricoles": {
+          "taux_subventionnement": {"mediane": 0.20, "q1": 0.12, "q3": 0.30}
+        }
+      }
+    },
+    "47_elevage_bovin_viande": {
+      "code_otex": "47",
+      "libelle": "Bovins viande (allaitant)",
+      "structure_moyenne": {
+        "sau_ha": 120,
+        "uta": 1.5,
+        "ca_moyen": 120000,
+        "total_bilan_moyen": 400000
+      },
+      "ratios": {
+        "solvabilite": {
+          "autonomie_financiere": {"mediane": 0.45, "q1": 0.30, "q3": 0.60},
+          "dettes_fin_ebe": {"mediane": 5.0, "q1": 2.0, "q3": 8.0}
+        },
+        "rentabilite": {
+          "marge_ebe": {"mediane": 0.20, "q1": 0.10, "q3": 0.30},
+          "ebe_par_uta": {"mediane": 22000, "q1": 12000, "q3": 35000}
+        },
+        "specifiques_agricoles": {
+          "taux_subventionnement": {"mediane": 0.55, "q1": 0.40, "q3": 0.70}
+        }
+      }
+    },
+    "28_viticulture": {
+      "code_otex": "28",
+      "libelle": "Viticulture",
+      "structure_moyenne": {
+        "sau_ha": 25,
+        "uta": 2.5,
+        "ca_moyen": 250000,
+        "total_bilan_moyen": 600000
+      },
+      "ratios": {
+        "solvabilite": {
+          "autonomie_financiere": {"mediane": 0.40, "q1": 0.25, "q3": 0.55},
+          "dettes_fin_ebe": {"mediane": 5.5, "q1": 2.5, "q3": 9.0}
+        },
+        "rentabilite": {
+          "marge_ebe": {"mediane": 0.30, "q1": 0.18, "q3": 0.42},
+          "ebe_par_uta": {"mediane": 45000, "q1": 25000, "q3": 70000}
+        },
+        "specifiques_agricoles": {
+          "taux_subventionnement": {"mediane": 0.05, "q1": 0.02, "q3": 0.10}
+        }
+      }
+    }
+  }
+}
